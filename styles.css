@@ -1,0 +1,85 @@
+body {
+  background-color: rgb(31, 30, 30);
+  font-family: "Roboto", sans-serif;
+
+  --grey-color-100: rgb(184, 184, 184);
+  --grey-color-500: rgb(76, 76, 76);
+
+  --primary-color-100: rgb(219, 190, 253);
+  --primary-color-600: rgb(77, 27, 138);
+  --primary-color-700: rgb(48, 10, 93);
+}
+
+h1 {
+  text-align: center;
+  color: var(--grey-color-100);
+  margin: 2rem auto 0 auto;
+}
+
+form {
+  width: 30rem;
+  margin: 3rem auto;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+label {
+  margin-bottom: 0.5rem;
+  display: block;
+  font-weight: bold;
+}
+
+textarea {
+  resize: none;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  display: block;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  font: inherit;
+  border: 1px solid var(--grey-color-100);
+  padding: 0.25rem;
+  color: var(--grey-color-500);
+}
+
+input:focus,
+textarea:focus {
+  background-color: var(--primary-color-100);
+  color: var(--primary-color-700);
+}
+
+button {
+  display: block;
+  font: inherit;
+  background-color: var(--primary-color-700);
+  color: white;
+  border: 1px solid var(--primary-color-700);
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--primary-color-600);
+  border-color: var(--primary-color-100);
+}
+
+.form-control-inline {
+  display: flex;
+}
+
+.form-control-inline input {
+  width: auto;
+  margin-right: 0.5rem;
+}
